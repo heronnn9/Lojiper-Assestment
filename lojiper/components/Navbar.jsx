@@ -9,14 +9,9 @@ const Navbar = () => {
   return (
     <div className="h-12 text-white bg-orange-400 p-4 flex items-center justify-between  uppercase md:h-24 lg:px-20 xl:px-40 ">
       <div className="hidden md:flex gap-4 flex-1 text-l">
-        <Link href="/">Home</Link>
-        <Link href="/todo">Make a List</Link>
-        <Link href="/contact">Contact</Link>
-      </div>
-      {/* App Name */}
-      <div className="text-xl md:font-bold flex-1 text-center">
-        {" "}
-        Lojiper Bilet
+        <Link href="/anasayfa" className=" text-2xl">
+          Lojiper Bilet
+        </Link>
       </div>
 
       {/* Mobile */}

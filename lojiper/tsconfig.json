@@ -31,7 +31,9 @@
     "app/api/user.js",
     "components/Date.jsx",
     "components/Navbar.jsx",
-    "components/NavMenu.jsx"
+    "components/NavMenu.jsx",
+    "components/Login.jsx",
+    "app/anasayfa/page.jsx"
   ],
   "exclude": ["node_modules"]
 }

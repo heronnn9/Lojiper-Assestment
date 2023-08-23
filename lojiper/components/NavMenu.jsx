@@ -7,11 +7,7 @@ import Link from "next/link";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
-  const navlinks = [
-    { id: 1, title: "Homepage", url: "/" },
-    { id: 2, title: "Profile", url: "/" },
-    { id: 3, title: "Todos", url: "/" },
-  ];
+  const navlinks = [{ id: 1, title: "Anasayfa", url: "/anasayfa" }];
   return (
     <div>
       {!open ? (
