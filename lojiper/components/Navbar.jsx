@@ -1,17 +1,37 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import NavMenu from "./NavMenu";
-import { BiSolidPhoneCall, BiLogoGithub } from "react-icons/bi";
+import { BiLogoGithub } from "react-icons/bi";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const [user, setUser] = useState(null);
+  const router = useRouter();
+
+  // Bu useEffect hook'u, localStorage'daki 'user' değeri her değiştiğinde tetiklenir.
+  useEffect(() => {
+    const storedUser =
+      typeof window !== "undefined"
+        ? JSON.parse(localStorage.getItem("user"))
+        : null;
+    setUser(storedUser);
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    setUser(null);
+    router.push("/");
+    // Sayfaya yönlendirme vb. işlemler burada yapılabilir.
+  };
+
   return (
     <div className="h-12 text-white bg-orange-400 p-4 flex items-center justify-between  uppercase md:h-24 lg:px-20 xl:px-40 ">
       <div className="hidden md:flex gap-4 flex-1 text-l">
-        <Link href="/anasayfa" className=" text-2xl">
+        <span href="/anasayfa" className="text-2xl">
           Lojiper Bilet
-        </Link>
+        </span>
       </div>
 
       {/* Mobile */}
@@ -25,7 +45,13 @@ const Navbar = () => {
         >
           <BiLogoGithub />
         </Link>
-        <div></div>
+
+        {/* Eğer kullanıcı oturum açtıysa Logout butonunu göster */}
+        {user && (
+          <button onClick={handleLogout} className="ml-4">
+            Logout
+          </button>
+        )}
       </div>
     </div>
   );

@@ -29,7 +29,7 @@
     ".next/types/**/*.ts",
     "app/api/user.js",
     "app/api/user.js",
-    "components/Date.jsx",
+    "components/Datepick.jsx",
     "components/Navbar.jsx",
     "components/NavMenu.jsx",
     "components/Login.jsx",

@@ -4,69 +4,87 @@
     "name": "Ahmet",
     "surname": "Yılmaz",
     "email": "ahmet.yilmaz@example.com",
-    "password": "ahmet1234"
+    "password": "ahmet1234",
+    "gender": "male"
   },
   {
     "id": 2,
     "name": "Elif",
     "surname": "Öztürk",
     "email": "elif.ozturk@example.com",
-    "password": "elif5678"
+    "password": "elif5678",
+    "gender": "female"
   },
   {
     "id": 3,
     "name": "Mehmet",
     "surname": "Kara",
     "email": "mehmet.kara@example.com",
-    "password": "mehmet9012"
+    "password": "mehmet9012",
+    "gender": "male"
   },
   {
     "id": 4,
     "name": "Ayşe",
     "surname": "Demir",
     "email": "ayse.demir@example.com",
-    "password": "ayse3456"
+    "password": "ayse3456",
+    "gender": "female"
   },
   {
     "id": 5,
     "name": "Osman",
     "surname": "Çelik",
     "email": "osman.celik@example.com",
-    "password": "osman7890"
+    "password": "osman7890",
+    "gender": "male"
   },
   {
     "id": 6,
     "name": "Zeynep",
     "surname": "Sağlam",
     "email": "zeynep.saglam@example.com",
-    "password": "zeynep1122"
+    "password": "zeynep1122",
+    "gender": "female"
   },
   {
     "id": 7,
     "name": "Emre",
     "surname": "Polat",
     "email": "emre.polat@example.com",
-    "password": "emre3344"
+    "password": "emre3344",
+    "gender": "male"
   },
   {
     "id": 8,
     "name": "Selin",
     "surname": "Taş",
     "email": "selin.tas@example.com",
-    "password": "selin5566"
+    "password": "selin5566",
+    "gender": "female"
   },
   {
     "id": 9,
     "name": "Berk",
     "surname": "Doğan",
     "email": "berk.dogan@example.com",
-    "password": "berk7788"
+    "password": "berk7788",
+    "gender": "male"
   },
   {
     "id": 10,
     "name": "Nur",
     "surname": "Koç",
     "email": "nur.koc@example.com",
-    "password": "nur9900"
+    "password": "nur9900",
+    "gender": "female"
+  },
+  {
+    "id": 11,
+    "name": "test",
+    "surname": "test",
+    "email": "test@gmail.com",
+    "password": "test",
+    "gender": "male"
   }
 ]

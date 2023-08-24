@@ -185,6 +185,17 @@
     "departure": "İstanbul",
     "time": 21.0,
     "price": 110,
-    "image": "https://web-assets.bcg.com/33/27/5f1dffb148eca51da46706bf6da9/bcg-istanbul-office.jpg"
+    "image": "https://web-assets.bcg.com/33/27/5f1dffb148eca51da46706bf6da9/bcg-istanbul-office.jpg",
+    "totalSeats": 50,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
   }
 ]

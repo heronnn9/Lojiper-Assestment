@@ -1,29 +1,38 @@
 "use client";
 import React from "react";
 import users from "@/data/data.json";
+import Loading from "@/components/Loading";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+
   const [message, setMessage] = useState("");
   const router = useRouter();
 
   const handleLogin = () => {
-    const user = users.find((u) => u.email === email);
+    setLoading(true);
 
-    if (user && user.password === password) {
-      setMessage("Giriş başarılı!");
-      router.push("/anasayfa");
+    // Test amaçlı, 2 saniye sonra loading durumunu false yapalım.
+    setTimeout(() => {
+      const user = users.find((u) => u.email === email);
 
-      // Burada oturum açma işlemlerinizi yapabilirsiniz.
-    } else {
-      setMessage("Hatalı email veya şifre.");
-      setTimeout(() => {
-        setMessage("");
-      }, 3000);
-    }
+      if (user && user.password === password) {
+        setMessage("Giriş başarılı!");
+        localStorage.setItem("user", JSON.stringify(user));
+        router.push("/anasayfa");
+      } else {
+        setMessage("Hatalı email veya şifre.");
+        setTimeout(() => {
+          setMessage("");
+        }, 3000);
+      }
+
+      setLoading(false);
+    }, 2000);
   };
   return (
     <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
@@ -34,7 +43,7 @@ export default function Login() {
         <div className="mt-6">
           <div className="mb-2">
             <label
-              for="email"
+              htmlFor="email"
               className="block text-sm font-semibold text-gray-800"
             >
               Email
@@ -48,7 +57,7 @@ export default function Login() {
           </div>
           <div className="mb-2">
             <label
-              for="password"
+              htmlFor="password"
               className="block text-sm font-semibold text-gray-800"
             >
               Password
@@ -69,7 +78,7 @@ export default function Login() {
               onClick={handleLogin}
               className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600"
             >
-              Login
+              {loading ? <Loading /> : "Login"}
             </button>
           </div>
         </div>

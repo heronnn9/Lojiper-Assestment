@@ -4,7 +4,6 @@ function Card({ sefer }) {
   return (
     <div className="m-2">
       {" "}
-      {/* Ana div */}
       <div className="bg-white w-[100vh] rounded-xl h-32 flex flex-col justify-between shadow-2xl">
         {/* Sefer detayları */}
         <div className="flex items-center justify-between w-full">
@@ -18,6 +17,7 @@ function Card({ sefer }) {
               <span>{sefer.departure} Otogarı</span>
             </div>
           </div>
+          <span className="font-bold">{sefer.price}₺</span>
           <img
             src={sefer.image}
             alt={`${sefer.location} to ${sefer.departure}`}
@@ -25,14 +25,37 @@ function Card({ sefer }) {
           />
         </div>
       </div>
-      {/* Accordion bileşeni */}
       <Accordion title="Detayları Göster">
-        <p>Sefer detayları burada yer alabilir.</p>
-        <p>Sefer detayları burada yer alabilir.</p>
-        <p>Sefer detayları burada yer alabilir.</p>
-        <p>Sefer detayları burada yer alabilir.</p>
-        <p>Sefer detayları burada yer alabilir.</p>
-        {/* Diğer detaylar */}
+        <div className="grid grid-cols-4 gap-4">
+          {Array(sefer.totalSeats)
+            .fill()
+            .map((_, index) => {
+              const seatNumber = index + 1;
+              let seatColor = "bg-green-500";
+
+              if (sefer.occupiedSeats) {
+                const occupiedSeat = sefer.occupiedSeats.find(
+                  (s) => s.seatNumber === seatNumber
+                );
+
+                if (occupiedSeat) {
+                  seatColor =
+                    occupiedSeat.gender === "female"
+                      ? "bg-pink-500"
+                      : "bg-blue-500";
+                }
+              }
+
+              return (
+                <div
+                  key={seatNumber}
+                  className={`p-2 rounded w-16 ${seatColor}`}
+                >
+                  {seatNumber}
+                </div>
+              );
+            })}
+        </div>
       </Accordion>
     </div>
   );

@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div>
       <DatePicker
-        className="rounded flex text-center h-10 bg-slate-700"
+        className="rounded flex text-center h-9 bg-white border shadow-md w-64"
         selected={date}
         onChange={(date) => setDate(date)}
       />
