@@ -1,192 +1,12 @@
 [
   {
     "id": 1,
-    "companyname": "FirmaA",
-    "location": "İstanbul",
-    "departure": "Ankara",
-    "time": 9.3,
-    "price": 100
-  },
-  {
-    "id": 2,
-    "companyname": "FirmaA",
-    "location": "İzmir",
-    "departure": "İstanbul",
-    "time": 10.0,
-    "price": 95
-  },
-  {
-    "id": 3,
-    "companyname": "FirmaB",
-    "location": "Antalya",
-    "departure": "İstanbul",
-    "time": 11.0,
-    "price": 105
-  },
-  {
-    "id": 4,
-    "companyname": "FirmaB",
-    "location": "Ankara",
-    "departure": "İzmir",
-    "time": 13.0,
-    "price": 110
-  },
-  {
-    "id": 5,
-    "companyname": "FirmaC",
-    "location": "Bursa",
-    "departure": "İstanbul",
-    "time": 14.3,
-    "price": 90
-  },
-  {
-    "id": 6,
-    "companyname": "FirmaC",
-    "location": "Eskişehir",
-    "departure": "Ankara",
-    "time": 15.0,
-    "price": 85
-  },
-  {
-    "id": 7,
-    "companyname": "FirmaA",
-    "location": "Trabzon",
-    "departure": "Ankara",
-    "time": 16.0,
-    "price": 120
-  },
-  {
-    "id": 8,
-    "companyname": "FirmaB",
-    "location": "İstanbul",
-    "departure": "Bursa",
-    "time": 17.0,
-    "price": 70
-  },
-  {
-    "id": 9,
-    "companyname": "FirmaB",
-    "location": "Adana",
-    "departure": "İstanbul",
-    "time": 18.0,
-    "price": 130
-  },
-  {
-    "id": 10,
-    "companyname": "FirmaA",
-    "location": "İstanbul",
-    "departure": "Eskişehir",
-    "time": 9.3,
-    "price": 75
-  },
-  {
-    "id": 11,
-    "companyname": "FirmaC",
-    "location": "Antalya",
-    "departure": "İstanbul",
-    "time": 10.3,
-    "price": 100
-  },
-  {
-    "id": 12,
-    "companyname": "FirmaA",
-    "location": "Bursa",
-    "departure": "Antalya",
-    "time": 11.0,
-    "price": 110
-  },
-  {
-    "id": 13,
-    "companyname": "FirmaB",
-    "location": "İzmir",
-    "departure": "Trabzon",
-    "time": 12.0,
-    "price": 125
-  },
-  {
-    "id": 14,
-    "companyname": "FirmaC",
-    "location": "Eskişehir",
-    "departure": "Bursa",
-    "time": 14.3,
-    "price": 95
-  },
-  {
-    "id": 15,
-    "companyname": "FirmaA",
-    "location": "Ankara",
-    "departure": "Adana",
-    "time": 15.0,
-    "price": 115
-  },
-  {
-    "id": 16,
-    "companyname": "FirmaB",
-    "location": "Trabzon",
-    "departure": "İzmir",
-    "time": 16.3,
-    "price": 130
-  },
-  {
-    "id": 17,
-    "companyname": "FirmaC",
-    "location": "Adana",
-    "departure": "Eskişehir",
-    "time": 17.3,
-    "price": 90
-  },
-  {
-    "id": 18,
-    "companyname": "FirmaA",
-    "location": "İzmir",
-    "departure": "Trabzon",
-    "time": 18.0,
-    "price": 120
-  },
-  {
-    "id": 19,
-    "companyname": "FirmaB",
-    "location": "Bursa",
-    "departure": "Adana",
-    "time": 19.0,
-    "price": 100
-  },
-  {
-    "id": 20,
     "companyname": "Metro",
-    "location": "Eskişehir",
-    "departure": "İstanbul",
-    "time": 20.0,
-    "price": 110,
-    "image": "https://web-assets.bcg.com/33/27/5f1dffb148eca51da46706bf6da9/bcg-istanbul-office.jpg"
-  },
-  {
-    "id": 21,
-    "companyname": "Güney Akdeniz",
-    "location": "Eskişehir",
-    "departure": "İstanbul",
-    "time": 14.0,
-    "price": 250,
-    "image": "https://web-assets.bcg.com/33/27/5f1dffb148eca51da46706bf6da9/bcg-istanbul-office.jpg"
-  },
-  {
-    "id": 22,
-    "companyname": "Pamukkale",
-    "location": "Eskişehir",
-    "departure": "İstanbul",
-    "time": 18.0,
-    "price": 110,
-    "image": "https://web-assets.bcg.com/33/27/5f1dffb148eca51da46706bf6da9/bcg-istanbul-office.jpg"
-  },
-  {
-    "id": 23,
-    "companyname": "Kamil Koç",
-    "location": "Eskişehir",
-    "departure": "İstanbul",
-    "time": 21.0,
-    "price": 110,
-    "image": "https://web-assets.bcg.com/33/27/5f1dffb148eca51da46706bf6da9/bcg-istanbul-office.jpg",
-    "totalSeats": 50,
+    "location": "İstanbul",
+    "departure": "Ankara",
+    "time": 9.3,
+    "price": 100,
+    "totalSeats": 48,
     "occupiedSeats": [
       { "seatNumber": 1, "gender": "female" },
       { "seatNumber": 4, "gender": "male" },
@@ -196,6 +16,698 @@
       { "seatNumber": 21, "gender": "male" },
       { "seatNumber": 20, "gender": "female" },
       { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 2,
+    "companyname": "Pamukkale",
+    "location": "İzmir",
+    "departure": "İstanbul",
+    "time": 10.0,
+    "price": 95,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 3,
+    "companyname": "İstanbul Seyehat",
+    "location": "Antalya",
+    "departure": "İstanbul",
+    "time": 11.0,
+    "price": 105,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 4,
+    "companyname": "Ankara Turizm",
+    "location": "Ankara",
+    "departure": "İzmir",
+    "time": 13.0,
+    "price": 110,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 5,
+    "companyname": "Bursa Turizm",
+    "location": "Bursa",
+    "departure": "İstanbul",
+    "time": 14.3,
+    "price": 90,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 6,
+    "companyname": "Eskişehir Turizm",
+    "location": "Eskişehir",
+    "departure": "Ankara",
+    "time": 15.0,
+    "price": 85,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 7,
+    "companyname": "Trabzon Seyehat",
+    "location": "Trabzon",
+    "departure": "Ankara",
+    "time": 16.0,
+    "price": 120,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 8,
+    "companyname": "Ulusoy",
+    "location": "İstanbul",
+    "departure": "Bursa",
+    "time": 17.0,
+    "price": 70,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 9,
+    "companyname": "Ulusoy",
+    "location": "Adana",
+    "departure": "İstanbul",
+    "time": 18.0,
+    "price": 130,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 10,
+    "companyname": "Kamil Koç",
+    "location": "İstanbul",
+    "departure": "Eskişehir",
+    "time": 9.3,
+    "price": 75,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 11,
+    "companyname": "Pamukkale",
+    "location": "Antalya",
+    "departure": "İstanbul",
+    "time": 10.3,
+    "price": 100,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 12,
+    "companyname": "Metro",
+    "location": "Bursa",
+    "departure": "Antalya",
+    "time": 11.0,
+    "price": 110,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 13,
+    "companyname": "Güney Akdeniz",
+    "location": "İzmir",
+    "departure": "Trabzon",
+    "time": 12.0,
+    "price": 125,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 14,
+    "companyname": "Ulusoy",
+    "location": "Eskişehir",
+    "departure": "Bursa",
+    "time": 14.3,
+    "price": 95,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 15,
+    "companyname": "Metro",
+    "location": "Ankara",
+    "departure": "Adana",
+    "time": 15.0,
+    "price": 115,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 16,
+    "companyname": "Metro",
+    "location": "Trabzon",
+    "departure": "İzmir",
+    "time": 16.3,
+    "price": 130,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 17,
+    "companyname": "Pamukkale",
+    "location": "Adana",
+    "departure": "Eskişehir",
+    "time": 17.3,
+    "price": 90,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 18,
+    "companyname": "Kamil Koç",
+    "location": "İzmir",
+    "departure": "Trabzon",
+    "time": 18.0,
+    "price": 120,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 19,
+    "companyname": "Adana Seyehat",
+    "location": "Bursa",
+    "departure": "Adana",
+    "time": 19.0,
+    "price": 100,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 20,
+    "companyname": "Metro",
+    "location": "Eskişehir",
+    "departure": "İstanbul",
+    "time": 20.0,
+    "price": 110,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 21,
+    "companyname": "Güney Akdeniz",
+    "location": "Eskişehir",
+    "departure": "İstanbul",
+    "time": 14.0,
+    "price": 250,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 22,
+    "companyname": "Pamukkale",
+    "location": "Eskişehir",
+    "departure": "İstanbul",
+    "time": 18.0,
+    "price": 110,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+  {
+    "id": 23,
+    "companyname": "Kamil Koç",
+    "location": "Eskişehir",
+    "departure": "İstanbul",
+    "time": 21.0,
+    "price": 110,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 1, "gender": "female" },
+      { "seatNumber": 4, "gender": "male" },
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 16, "gender": "male" },
+      { "seatNumber": 19, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" },
+      { "seatNumber": 20, "gender": "female" },
+      { "seatNumber": 29, "gender": "male" }
+    ]
+  },
+
+  {
+    "id": 24,
+    "companyname": "Pamukkale",
+    "location": "İstanbul",
+    "departure": "Antalya",
+    "time": 15.0,
+    "price": 130,
+    "totalSeats": 46,
+    "occupiedSeats": [
+      { "seatNumber": 5, "gender": "male" },
+      { "seatNumber": 9, "gender": "female" }
+    ]
+  },
+  {
+    "id": 25,
+    "companyname": "Metro",
+    "location": "Antalya",
+    "departure": "İzmir",
+    "time": 16.5,
+    "price": 95,
+    "totalSeats": 44,
+    "occupiedSeats": [
+      { "seatNumber": 12, "gender": "female" },
+      { "seatNumber": 15, "gender": "male" }
+    ]
+  },
+  {
+    "id": 26,
+    "companyname": "Ulusoy",
+    "location": "İzmir",
+    "departure": "Bursa",
+    "time": 3.5,
+    "price": 50,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 20, "gender": "male" },
+      { "seatNumber": 24, "gender": "female" }
+    ]
+  },
+  {
+    "id": 27,
+    "companyname": "Anadolu",
+    "location": "Bursa",
+    "departure": "Trabzon",
+    "time": 18.0,
+    "price": 155,
+    "totalSeats": 50,
+    "occupiedSeats": [
+      { "seatNumber": 27, "gender": "female" },
+      { "seatNumber": 30, "gender": "male" }
+    ]
+  },
+  {
+    "id": 28,
+    "companyname": "Süha",
+    "location": "Trabzon",
+    "departure": "Adana",
+    "time": 14.5,
+    "price": 145,
+    "totalSeats": 42,
+    "occupiedSeats": [
+      { "seatNumber": 35, "gender": "male" },
+      { "seatNumber": 37, "gender": "female" }
+    ]
+  },
+  {
+    "id": 29,
+    "companyname": "Varan",
+    "location": "Adana",
+    "departure": "Ankara",
+    "time": 10.0,
+    "price": 100,
+    "totalSeats": 49,
+    "occupiedSeats": [
+      { "seatNumber": 40, "gender": "female" },
+      { "seatNumber": 45, "gender": "male" }
+    ]
+  },
+  {
+    "id": 30,
+    "companyname": "Ses Tur",
+    "location": "Ankara",
+    "departure": "Eskişehir",
+    "time": 2.5,
+    "price": 35,
+    "totalSeats": 47,
+    "occupiedSeats": [
+      { "seatNumber": 50, "gender": "male" },
+      { "seatNumber": 2, "gender": "female" }
+    ]
+  },
+  {
+    "id": 31,
+    "companyname": "Efe Tur",
+    "location": "Eskişehir",
+    "departure": "Ankara",
+    "time": 3.0,
+    "price": 40,
+    "totalSeats": 50,
+    "occupiedSeats": [
+      { "seatNumber": 7, "gender": "female" },
+      { "seatNumber": 10, "gender": "male" },
+      { "seatNumber": 14, "gender": "female" }
+    ]
+  },
+  {
+    "id": 32,
+    "companyname": "Otogar Turizm",
+    "location": "İstanbul",
+    "departure": "Trabzon",
+    "time": 17.5,
+    "price": 160,
+    "totalSeats": 45,
+    "occupiedSeats": [
+      { "seatNumber": 11, "gender": "male" },
+      { "seatNumber": 17, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" }
+    ]
+  },
+  {
+    "id": 33,
+    "companyname": "Doğu Ekspres",
+    "location": "İzmir",
+    "departure": "Eskişehir",
+    "time": 4.5,
+    "price": 55,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 26, "gender": "male" },
+      { "seatNumber": 28, "gender": "female" },
+      { "seatNumber": 31, "gender": "male" }
+    ]
+  },
+  {
+    "id": 34,
+    "companyname": "Bayrak Turizm",
+    "location": "Adana",
+    "departure": "Bursa",
+    "time": 13.5,
+    "price": 120,
+    "totalSeats": 44,
+    "occupiedSeats": [
+      { "seatNumber": 32, "gender": "male" },
+      { "seatNumber": 34, "gender": "female" },
+      { "seatNumber": 36, "gender": "male" }
+    ]
+  },
+  {
+    "id": 35,
+    "companyname": "Hızlı Seyahat",
+    "location": "Antalya",
+    "departure": "İstanbul",
+    "time": 14.0,
+    "price": 130,
+    "totalSeats": 46,
+    "occupiedSeats": [
+      { "seatNumber": 38, "gender": "female" },
+      { "seatNumber": 40, "gender": "male" },
+      { "seatNumber": 43, "gender": "female" }
+    ]
+  },
+  {
+    "id": 36,
+    "companyname": "Güney Tur",
+    "location": "Bursa",
+    "departure": "İzmir",
+    "time": 5.0,
+    "price": 70,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 5, "gender": "male" },
+      { "seatNumber": 9, "gender": "female" },
+      { "seatNumber": 13, "gender": "male" }
+    ]
+  },
+  {
+    "id": 37,
+    "companyname": "Batı Seyahat",
+    "location": "Antalya",
+    "departure": "Eskişehir",
+    "time": 7.5,
+    "price": 90,
+    "totalSeats": 46,
+    "occupiedSeats": [
+      { "seatNumber": 6, "gender": "female" },
+      { "seatNumber": 8, "gender": "male" },
+      { "seatNumber": 10, "gender": "female" }
+    ]
+  },
+  {
+    "id": 38,
+    "companyname": "Karadeniz Tur",
+    "location": "Trabzon",
+    "departure": "Adana",
+    "time": 16.0,
+    "price": 140,
+    "totalSeats": 50,
+    "occupiedSeats": [
+      { "seatNumber": 15, "gender": "male" },
+      { "seatNumber": 17, "gender": "female" },
+      { "seatNumber": 21, "gender": "male" }
+    ]
+  },
+  {
+    "id": 39,
+    "companyname": "Yıldırım Turizm",
+    "location": "İstanbul",
+    "departure": "Ankara",
+    "time": 6.5,
+    "price": 85,
+    "totalSeats": 44,
+    "occupiedSeats": [
+      { "seatNumber": 23, "gender": "female" },
+      { "seatNumber": 25, "gender": "male" },
+      { "seatNumber": 29, "gender": "female" }
+    ]
+  },
+  {
+    "id": 40,
+    "companyname": "Sahil Seyahat",
+    "location": "İzmir",
+    "departure": "Bursa",
+    "time": 4.0,
+    "price": 65,
+    "totalSeats": 42,
+    "occupiedSeats": [
+      { "seatNumber": 31, "gender": "male" },
+      { "seatNumber": 33, "gender": "female" },
+      { "seatNumber": 35, "gender": "male" }
+    ]
+  },
+  {
+    "id": 41,
+    "companyname": "Kervan Tur",
+    "location": "Ankara",
+    "departure": "Eskişehir",
+    "time": 2.0,
+    "price": 45,
+    "totalSeats": 46,
+    "occupiedSeats": [
+      { "seatNumber": 37, "gender": "female" },
+      { "seatNumber": 39, "gender": "male" },
+      { "seatNumber": 43, "gender": "female" }
+    ]
+  },
+  {
+    "id": 42,
+    "companyname": "Doğan Seyahat",
+    "location": "Adana",
+    "departure": "Trabzon",
+    "time": 18.0,
+    "price": 150,
+    "totalSeats": 48,
+    "occupiedSeats": [
+      { "seatNumber": 41, "gender": "male" },
+      { "seatNumber": 45, "gender": "female" },
+      { "seatNumber": 47, "gender": "male" }
+    ]
+  },
+  {
+    "id": 43,
+    "companyname": "Aydınlar Turizm",
+    "location": "Antalya",
+    "departure": "İstanbul",
+    "time": 13.0,
+    "price": 125,
+    "totalSeats": 44,
+    "occupiedSeats": [
+      { "seatNumber": 3, "gender": "female" },
+      { "seatNumber": 7, "gender": "male" },
+      { "seatNumber": 11, "gender": "female" }
     ]
   }
 ]

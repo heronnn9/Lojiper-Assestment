@@ -12,7 +12,7 @@ function Accordion({ title, children }) {
     <div className="border rounded mt-4">
       <button
         onClick={toggleAccordion}
-        className="bg-gray-200 w-full text-left py-2 px-4 cursor-pointer  hover:bg-gray-300"
+        className="bg-gray-200 w-full text-left py-4 px-4   cursor-pointer  hover:bg-gray-300"
       >
         {title}
       </button>

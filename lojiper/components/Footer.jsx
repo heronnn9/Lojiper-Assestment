@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-white p-6">
+    <footer className=" navbarbg text-white p-6">
       <div className="container mx-auto max-w-screen-xl md:flex justify-between items-center">
         <div className="text-center md:text-left mb-4 md:mb-0">
           <h2 className="text-xl font-bold">Lojiper</h2>

@@ -43,9 +43,9 @@ function BusSearch() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center   bg-slate-300  h-max-content min-h-screen">
+    <div className="flex flex-col items-center   bg-slate-300  h-max-content min-h-[80vh]">
       {loading && <Loading />}
-      <div className="w-72  border-slate-200 border-8 mt-2 flex flex-col items-center shadow-xl bg-slate-200">
+      <div className=" w-96 rounded-xl  border-slate-200 border-8 mt-2 flex flex-col items-center shadow-xl bg-slate-200">
         <div>
           <label
             htmlFor="location"

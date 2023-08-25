@@ -27,18 +27,19 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-12 text-white bg-orange-400 p-4 flex items-center justify-between  uppercase md:h-24 lg:px-20 xl:px-40 ">
+    <div className="h-12 text-white navbarbg p-4 flex items-center justify-between   md:h-24 lg:px-20 xl:px-40 ">
       <div className="hidden md:flex gap-4 flex-1 text-l">
         <span href="/anasayfa" className="text-2xl">
-          Lojiper Bilet
+          LOJIPER BILET
         </span>
       </div>
-
       {/* Mobile */}
       <div className="md:hidden">
         <NavMenu />
       </div>
+
       <div className="hidden md:flex gap-4 items-center justify-end flex-1">
+        {user && <h1> Mr/Mss. {user.name} </h1>}
         <Link
           href="https://github.com/heronnn9"
           className="md:absolute top-3 r-2 lg:static flex items-center gap-2 cursor-pointer bg-none px-1 rounded-md text-4xl"
@@ -49,7 +50,7 @@ const Navbar = () => {
         {/* Eğer kullanıcı oturum açtıysa Logout butonunu göster */}
         {user && (
           <button onClick={handleLogout} className="ml-4">
-            Logout
+            Çıkış : Logout
           </button>
         )}
       </div>

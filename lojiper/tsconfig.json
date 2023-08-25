@@ -29,11 +29,13 @@
     ".next/types/**/*.ts",
     "app/api/user.js",
     "app/api/user.js",
-    "components/Datepick.jsx",
+    "components/Datepick.tsx",
     "components/Navbar.jsx",
     "components/NavMenu.jsx",
     "components/Login.jsx",
-    "app/anasayfa/page.jsx"
+    "app/anasayfa/page.jsx",
+    "app/payment/page.jsx",
+    "components/Footer.jsx"
   ],
   "exclude": ["node_modules"]
 }
