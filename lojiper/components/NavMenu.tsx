@@ -11,7 +11,7 @@ const Menu = () => {
   return (
     <div>
       {!open ? (
-        <FaHamburger className="logo" size={30} onClick={() => setOpen(true)} />
+        <FaHamburger size={30} onClick={() => setOpen(true)} />
       ) : (
         <AiOutlineClose
           className="logo"

@@ -1,20 +1,23 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect, ReactNode } from "react";
 import NavMenu from "./NavMenu";
 import { BiLogoGithub } from "react-icons/bi";
 import Link from "next/link";
-import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
+interface User {
+  name: string;
+}
+
 const Navbar = () => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState<User | null>(null);
+
   const router = useRouter();
 
-  // Bu useEffect hook'u, localStorage'daki 'user' değeri her değiştiğinde tetiklenir.
   useEffect(() => {
     const storedUser =
       typeof window !== "undefined"
-        ? JSON.parse(localStorage.getItem("user"))
+        ? JSON.parse(localStorage.getItem("user") || "null")
         : null;
     setUser(storedUser);
   }, []);
@@ -23,15 +26,12 @@ const Navbar = () => {
     localStorage.removeItem("user");
     setUser(null);
     router.push("/");
-    // Sayfaya yönlendirme vb. işlemler burada yapılabilir.
   };
 
   return (
-    <div className="h-12 text-white navbarbg p-4 flex items-center justify-between   md:h-24 lg:px-20 xl:px-40 ">
+    <div className="h-12 text-white navbarbg p-4 flex items-center justify-between md:h-24 lg:px-20 xl:px-40 ">
       <div className="hidden md:flex gap-4 flex-1 text-l">
-        <span href="/anasayfa" className="text-2xl">
-          LOJIPER BILET
-        </span>
+        <span className="text-2xl">LOJIPER BILET</span>
       </div>
       {/* Mobile */}
       <div className="md:hidden">

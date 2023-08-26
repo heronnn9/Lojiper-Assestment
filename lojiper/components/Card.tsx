@@ -4,17 +4,36 @@ import Accordion from "@/components/Accordion";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-function Card({ sefer }) {
-  const calculateTotalPrice = () => {
+type SeatType = {
+  seatNumber: number;
+  gender: "male" | "female" | "other";
+};
+
+type SeferType = {
+  companyname: string;
+  time: number;
+  location: string;
+  departure: string;
+  price: number;
+  totalSeats: number;
+  occupiedSeats: SeatType[];
+};
+
+type CardProps = {
+  sefer: SeferType;
+};
+
+const Card: React.FC<CardProps> = ({ sefer }) => {
+  const calculateTotalPrice = (): number => {
     return selectedSeats.length * sefer.price;
   };
 
   const router = useRouter();
 
-  const [selectedSeats, setSelectedSeats] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0);
+  const [selectedSeats, setSelectedSeats] = useState<number[]>([]);
+  const [totalPrice, setTotalPrice] = useState<number>(0);
 
-  const saveSeatsToLocalStorage = () => {
+  const saveSeatsToLocalStorage = (): void => {
     localStorage.setItem("selectedSeats", JSON.stringify(selectedSeats));
     localStorage.setItem("totalPrice", totalPrice.toString());
   };
@@ -26,7 +45,7 @@ function Card({ sefer }) {
     }
   }, []);
 
-  const handleSeatClick = (seatNumber) => {
+  const handleSeatClick = (seatNumber: number): void => {
     let updatedSeats;
 
     if (selectedSeats.includes(seatNumber)) {
@@ -46,12 +65,12 @@ function Card({ sefer }) {
     saveSeatsToLocalStorage();
   };
 
-  const goToPaymentPage = () => {
+  const goToPaymentPage = (): void => {
     saveSeatsToLocalStorage();
     router.push("/payment");
   };
 
-  const getSeatColor = (seatNumber) => {
+  const getSeatColor = (seatNumber: number): string => {
     if (selectedSeats.includes(seatNumber)) {
       return "bg-yellow-500";
     }
@@ -87,7 +106,7 @@ function Card({ sefer }) {
         <div>Koltuk seçiniz (Toplam Tutar: {totalPrice}₺)</div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 bg-slate-300">
           {Array(sefer.totalSeats)
-            .fill()
+            .fill(undefined)
             .map((_, index) => {
               const seatNumber = index + 1;
               const seatColor = getSeatColor(seatNumber);
@@ -114,6 +133,6 @@ function Card({ sefer }) {
       </Accordion>
     </div>
   );
-}
+};
 
 export default Card;

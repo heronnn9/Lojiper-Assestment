@@ -62,9 +62,9 @@ function PaymentPage() {
     }
   };
   return (
-    <div className="bg-slate-300 min-h-screen flex flex-col md:flex-row justify-between p-4 ">
+    <div className="bg-slate-300 min-h-[80vh] flex flex-col md:flex-row justify-between p-4 ">
       {/* Seçilen Koltuk Bilgileri */}
-      <div className="w-full md:w-1/4 bg-white h-[15vh] mt-4 text-slate-600 shadow-xl rounded-xl">
+      <div className="w-full md:w-1/4 bg-white h-[20vh] mt-4 text-slate-600 shadow-xl rounded-xl">
         <div className="p-4 w-full border-b-2">
           <h1>Lojiper</h1>
         </div>
@@ -83,7 +83,7 @@ function PaymentPage() {
 
       {/* İletişim Bilgileri */}
       <div className="w-full md:w-2/6 mt-4">
-        <div className="h-[30vh] bg-white rounded-xl text-slate-600 shadow-xl">
+        <div className="h-[32vh] bg-white rounded-xl text-slate-600 shadow-xl">
           <div className="border-b-2 text-lg text-slate-600 p-2">
             <h1>İletişim Bilgileri</h1>
           </div>
@@ -108,7 +108,7 @@ function PaymentPage() {
             </div>
           </div>
         </div>
-        <div className="h-[30vh] bg-white rounded-xl text-slate-600 mt-2 shadow-xl">
+        <div className="h-[32vh] bg-white rounded-xl text-slate-600 mt-2 shadow-xl">
           <div className="border-b-2 text-lg text-slate-600 p-2">
             <h1>Yolcu Bilgileri</h1>
           </div>
@@ -136,7 +136,7 @@ function PaymentPage() {
       </div>
 
       {/* Kart Bilgileri */}
-      <div className="w-full md:w-1/4 bg-white h-[60vh] mt-4 text-gray-600 rounded-xl shadow-xl">
+      <div className="w-full md:w-1/4 bg-white md:h-[70vh] mt-4 text-gray-600 rounded-xl shadow-xl">
         <div className="p-4 w-full border-b-2">
           <h1>Ödeme Bilgileri</h1>
         </div>

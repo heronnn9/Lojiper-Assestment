@@ -86,5 +86,13 @@
     "email": "test@gmail.com",
     "password": "test",
     "gender": "male"
+  },
+  {
+    "id": 12,
+    "name": "Ebru",
+    "surname": "Akgün",
+    "email": "ebruberke78@gmail.com",
+    "password": "16081978",
+    "gender": "female"
   }
 ]

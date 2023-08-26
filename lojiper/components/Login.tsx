@@ -1,24 +1,36 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import users from "@/data/data.json";
 import Loading from "@/components/Loading";
-import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-export default function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
 
-  const [message, setMessage] = useState("");
+// Kullanıcı tipi
+type UserType = {
+  id: number;
+  name: string;
+  surname: string;
+  email: string;
+  password: string;
+  gender: "male" | "female";
+};
+
+export default function Login() {
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
+  const [message, setMessage] = useState<string | null>(null);
+
   const router = useRouter();
 
   const handleLogin = () => {
     setLoading(true);
 
-    // Test amaçlı, 2 saniye sonra loading durumunu false yapalım.
+    // 2 saniye sonra loading durumunu false yap
     setTimeout(() => {
-      const user = users.find((u) => u.email === email);
+      const user: UserType | undefined = users.find(
+        (u) => u.email === email
+      ) as UserType | undefined;
 
       if (user && user.password === password) {
         setMessage("Giriş başarılı!");
@@ -27,13 +39,14 @@ export default function Login() {
       } else {
         setMessage("Hatalı email veya şifre.");
         setTimeout(() => {
-          setMessage("");
+          setMessage(null);
         }, 3000);
       }
 
       setLoading(false);
     }, 2000);
   };
+
   return (
     <div className="relative flex flex-col justify-center min-h-[80vh] bg-slate-200 overflow-hidden">
       <div className="w-full p-6 m-auto bg-white rounded-md shadow-lg lg:max-w-xl">
